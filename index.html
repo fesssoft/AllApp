@@ -24,11 +24,6 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
 }
 </style>
 
-<script>
-function click(name){
-location.href = 'other/' + name;
-}
-</script>
 </head>
 <body>
 <div class="logo">
@@ -42,13 +37,11 @@ location.href = 'other/' + name;
 <!-- Новинки  -->
 <form>
 <font size="+1">
-<legend>Новинки:</legend>
+<legend>Новое:</legend>
 <Hr align="center" width="100%" size="2">
 
 <!-- FWP  -->
-<button name="FWPPage.html" style="width: 100%;" 
-onClick='javascript:click(name)'
->
+<button style="width: 100%;"  formaction = 'FWPPage.html'>
 <div class="logo">
 <img src="image/fwp.png" width="50" height="50" alt="logo">
   <div class="text">
@@ -79,7 +72,7 @@ onClick='javascript:click(name)'
 <summary>Аудио и видео</summary>
 
 <!-- FWP  -->
-<button name="button" style="width: 100%;">
+<button name="button" style="width: 100%;" formaction = 'FWPPage.html'>
 <div class="logo">
 <img src="image/fwp.png" width="50" height="50" alt="logo">
   <div class="text">
